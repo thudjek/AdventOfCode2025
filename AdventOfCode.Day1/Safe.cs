@@ -6,12 +6,19 @@ public class Safe
 
     private int currentNumber = 0;
 
-    public int CalculateResultPart1(string[] inputs)
+    private readonly string[] _inputs;
+
+    public Safe(string[] inputs)
+    {
+        _inputs = inputs;
+    }
+
+    public int CalculateResultPart1()
     {
         currentNumber = 50;
         var result = 0;
 
-        foreach (var input in inputs)
+        foreach (var input in _inputs)
         {
             var (Direction, Value) = ParseInput(input);
 
@@ -57,12 +64,12 @@ public class Safe
         return result;
     }
 
-    public int CalculateResultPart2(string[] inputs)
+    public int CalculateResultPart2()
     {
         currentNumber = 50;
         var result = 0;
 
-        foreach (var input in inputs)
+        foreach (var input in _inputs)
         {
             var (Direction, Value) = ParseInput(input);
 

@@ -20,8 +20,10 @@ foreach (var range in allRanges)
     }
 }
 
-//Console.WriteLine(IdCalculator.CalculateResultPart1(allNumbers));
-Console.WriteLine(IdCalculator.CalculateResultPart2(allNumbers));
+var idCalculator = new IdCalculator(allNumbers);
+
+Console.WriteLine(idCalculator.CalculateResultPart1());
+Console.WriteLine(idCalculator.CalculateResultPart2());
 
 Console.ReadLine();
 

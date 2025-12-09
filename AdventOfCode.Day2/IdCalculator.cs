@@ -2,11 +2,18 @@
 
 public class IdCalculator
 {
-    public static long CalculateResultPart1(List<long> inputNumbers)
+    private readonly List<long> _inputNumbers;
+
+    public IdCalculator(List<long> inputNumbers)
+    {
+        _inputNumbers = inputNumbers;
+    }
+
+    public long CalculateResultPart1()
     {
         long result = 0;
 
-        foreach (var inputNumber in inputNumbers)
+        foreach (var inputNumber in _inputNumbers)
         {
             var numAsString = inputNumber.ToString();
 
@@ -27,11 +34,11 @@ public class IdCalculator
         return result;
     }
 
-    public static long CalculateResultPart2(List<long> inputNumbers)
+    public long CalculateResultPart2()
     {
         long result = 0;
 
-        foreach (var inputNumber in inputNumbers)
+        foreach (var inputNumber in _inputNumbers)
         {
             var numAsString = inputNumber.ToString();
 
