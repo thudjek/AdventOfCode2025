@@ -4,4 +4,5 @@
   <Project Path="AdventOfCode.Day3/AdventOfCode.Day3.csproj" Id="504763c7-12c2-4973-a5fe-f444fb229804" />
   <Project Path="AdventOfCode.Day4/AdventOfCode.Day4.csproj" Id="4ed664f6-9cf0-4774-bb99-5343845d1a51" />
   <Project Path="AdventOfCode.Day5/AdventOfCode.Day5.csproj" Id="c54043ea-d7f2-45dd-8392-fda7fb3df2d5" />
+  <Project Path="AdventOfCode.Day6/AdventOfCode.Day6.csproj" Id="43731d7c-24e9-42d6-86d5-631667ac9a18" />
 </Solution>
